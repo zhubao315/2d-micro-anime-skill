@@ -1,0 +1,43 @@
+{
+  "name": "2d-micro-anime-skill",
+  "version": "1.1.0",
+  "description": "从剧本到成片的 2D 微动漫全流程 Agent Skill：策划/出图/动画(网格形变 + MiniMax H3 AI 视频)/配乐配音/合成/宣传，含可复用引擎与模板，支持一键安装到主流 Agent skills 目录。",
+  "keywords": [
+    "agent-skill",
+    "anime",
+    "animation",
+    "minimax-h3",
+    "comfyui",
+    "video-generation",
+    "2d-micro-anime"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zhubao315/2d-micro-anime-skill",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhubao315/2d-micro-anime-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhubao315/2d-micro-anime-skill/issues"
+  },
+  "bin": {
+    "anime-skill": "bin/cli.js",
+    "2d-anime": "bin/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "bin/",
+    "references/",
+    "templates/",
+    "engine/"
+  ],
+  "scripts": {
+    "check": "node bin/cli.js check",
+    "prepublishOnly": "node bin/cli.js check --source"
+  }
+}
